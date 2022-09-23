@@ -1,0 +1,46 @@
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: #000;
+	font-size: 17px;
+}
+
+main {
+	min-height: 100vh;
+}
+
+.video-background {
+	position: fixed;
+	z-index: -1;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	opacity: 0.5;
+}
+
+.section {
+	width: 100%;
+	height: 100vh;
+	border: 1px solid red;
+}
+
+.section.section--align-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-title {
+	color: #fff;
+	text-align: center;
+	font-size: 3.5rem;
+	font-weight: bold;
+	opacity: 0;
+	transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.section.in-page .main-title {
+	transform: scale(1.1);
+	opacity: 1;
+}
